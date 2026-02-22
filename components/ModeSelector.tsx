@@ -18,7 +18,7 @@ const ModeSelector: React.FC<ModeSelectorProps> = ({ onSelectMode }) => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center h-full w-full p-6 overflow-y-auto">
+    <div className="flex flex-col items-center w-full p-6 overflow-y-auto">
       {/* Header Section */}
       <div className="text-center mb-10 animate-fade-in-down">
         <div className="inline-flex items-center gap-2 mb-4">
