@@ -2,7 +2,7 @@ import React from 'react';
 
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
-    <div className="relative w-full h-full bg-slate-950 overflow-hidden">
+    <div className="relative w-full h-full bg-slate-950 overflow-hidden" style={{height: '100dvh'}}>
       {/* Background Grid */}
       <div className="absolute inset-0 pointer-events-none" 
         style={{
@@ -16,7 +16,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
       <div className="absolute bottom-[-10%] right-[-10%] w-[600px] h-[600px] bg-blue-900/20 rounded-full blur-[120px] pointer-events-none" />
       
       {/* Content */}
-      <div className="relative z-10 w-full h-full flex flex-col">
+      <div className="relative z-10 w-full flex flex-col" style={{height: '100dvh'}}>
         {children}
       </div>
     </div>
